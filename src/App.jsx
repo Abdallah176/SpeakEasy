@@ -15,7 +15,7 @@ export default function App() {
                   })
                 }
             </Route>
-
+            
           <Route path="/">
               <Route path="/login" element={<h1>Login Page</h1>}></Route>
               <Route path="/register" element={<h1>Register Page</h1>}></Route>

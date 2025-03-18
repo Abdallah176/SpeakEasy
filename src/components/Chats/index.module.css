@@ -26,7 +26,6 @@ p {
     gap: 10px;
     transition: .34 ease all;
     cursor: pointer;
-
     b {
         width: 8px;
         height: 8px;
@@ -39,7 +38,6 @@ p {
     &:hover {
         background-color: #e6ebf5;
     }
-
     img {
         width: 30px;
         height: 30px;
@@ -67,7 +65,6 @@ p {
 .chatMessage.active {
     background-color: #e6ebf5;;
 }
-
 #chatContainer {
     &::-webkit-scrollbar {
         width: 10px;

@@ -9,7 +9,6 @@ import { usePaths } from '../../store';
 
 export default function SideMenu() {
     const {paths} = usePaths();
-
     const [activePath,setActivePath] = useState();
     const location = useLocation();
     useEffect(() => {
@@ -23,9 +22,7 @@ export default function SideMenu() {
                     return <Link key={index} to={el.path} className={el.path == activePath ? styles.activeLink : null}>{el.icon}</Link>
                 })
             }
-            
             <Link className="d-none d-lg-block" id={styles.moon}><RiMoonLine /></Link>
-
             <div className="dropdown" id={styles.userActions}>
                 <img src={userImg} data-bs-toggle="dropdown" aria-expanded="false"/>
                 <ul className="dropdown-menu">
