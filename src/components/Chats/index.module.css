@@ -1,0 +1,85 @@
+h5 {
+    font-weight: 700;
+}
+.searchInput {
+    width: 100%;
+    background-color: #e6ebf5;
+    border: 0;
+    outline: 0;
+    padding: 10px 30px;
+    border-radius: 10px;
+    padding: 10px 30px;
+    padding-left: 50px;
+}
+#searchIcon {
+    font-size: 1.5rem;
+    top: calc(50% - (1.5rem / 2));
+    left: 10px;
+}
+p {
+    font-weight: 700;
+}
+.chatMessage {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 10px;
+    transition: .34 ease all;
+    cursor: pointer;
+
+    b {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        /* background-color: red; */
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &:hover {
+        background-color: #e6ebf5;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    p {
+        color: grey;
+        font-size: 14px;
+    }
+    h6 {
+        color: gray;
+        font-size: 12px;
+    }
+    span {
+        font-size: 12px;
+        padding: 5px 8px;
+        border-radius: 50%;
+        background-color: rgb(239, 71, 111, 0.18);
+        color: rgb(239, 71,111);
+    }
+}
+.chatMessage.active {
+    background-color: #e6ebf5;;
+}
+
+#chatContainer {
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #88888826;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #55555537;
+    }
+}
